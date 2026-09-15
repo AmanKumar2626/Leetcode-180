@@ -1,11 +1,8 @@
 class Solution {
     public List<List<Integer>> generate(int numRows) {       
         List<List<Integer>> result = new LinkedList();
-        result.add(List.of(1));
-        if(numRows == 1) return result;
-        result.add(List.of(1,1));       
-        if(numRows == 2) return result;
-        for(int i= 2; i < numRows; i++){
+        result.add(List.of(1));      
+        for(int i= 1; i < numRows; i++){
         List<Integer> list= new LinkedList();
             list.add(1);
             List<Integer> last = result.get(result.size() - 1);
