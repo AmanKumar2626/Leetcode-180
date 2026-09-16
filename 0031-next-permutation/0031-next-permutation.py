@@ -7,6 +7,7 @@ class Solution:
                         nums[i-1], nums[j] =  nums[j], nums[i-1]
                         nums[i:] = reversed(nums[i:])
                         return
+                        
         return nums.reverse()           
             
         
